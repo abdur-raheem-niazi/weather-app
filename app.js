@@ -4,7 +4,7 @@ const weatherDisplay = document.querySelector("#weather-info");
 
 async function getWeather(city) {
   const key = "G9j5KTceWkfaFlPotE1HeoRCLEU9wrGh";
-  const url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`;
+  const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`;
 
   try {
     const response = await fetch(url);
@@ -21,7 +21,7 @@ async function getWeather(city) {
 
 async function getCurrCondition(locationKey) {
   const apikey = "G9j5KTceWkfaFlPotE1HeoRCLEU9wrGh";
-  const url = `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apikey}`;
+  const url = `https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apikey}`;
 
   try {
     const response = await fetch(url);
