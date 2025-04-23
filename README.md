@@ -2,6 +2,8 @@
 
 A basic weather application that shows current weather conditions for any city using the AccuWeather API.
 
+[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://weather-app-arn.netlify.app)
+
 ## Features
 
 - Search weather by city name
